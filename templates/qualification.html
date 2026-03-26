@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualification</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff9800;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .edu-box {
+            background: #fafafa;
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 5px solid #ff9800;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .edu-box h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .edu-box p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('qualification') }}">Qualification</a>
+    <a href="{{ url_for('skills') }}">Skills</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+</div>
+
+<div class="container">
+
+    <h1>My Qualifications</h1>
+
+    <!-- Post Graduation -->
+        <div class="edu-box">
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p><strong>College:</strong> Vivek University On Campus</p>
+            <p><strong>University:</strong> Vivek University Bijnor</p>
+            <p><strong>Year:</strong> 2025 - 2027</p>
+            <p><strong>Percentage:</strong> Pursuing / 85%</p>
+        </div>
+
+    <!-- Graduation -->
+    <div class="edu-box">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p><strong>College:</strong> Rama Institute Of Higher Education, Kiratpur</p>
+        <p><strong>University:</strong> M.J.P.R.U.Bareilly </p>
+        <p><strong>Year:</strong> 2022 - 2025</p>
+        <p><strong>Percentage:</strong> 68%</p>
+    </div>
+
+    <!-- 12th -->
+    <div class="edu-box">
+        <h3>Intermediate (12th)</h3>
+        <p><strong>School:</strong> S.D.S.V.M Kiratpur,Bijnor</p>
+        <p><strong>Board:</strong> UP Board </p>
+        <p><strong>Year:</strong> 2022</p>
+    </div>
+
+    <!-- 10th -->
+    <div class="edu-box">
+        <h3>High School (10th)</h3>
+        <p><strong>School:</strong> S.D.S.V.M Kiratpur,Bijno </p>
+        <p><strong>Board:</strong> UP Board / CBSE</p>
+        <p><strong>Year:</strong> 2020</p>
+        <p><strong>Percentage:</strong> 75%</p>
+    </div>
+
+</div>
+
+</body>
+</html>

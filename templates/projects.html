@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff9800;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .project-card {
+            background: #fafafa;
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #2196F3;
+            text-align: left;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+
+        .project-card h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .project-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .tech {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0b7dda;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('qualification') }}">Qualification</a>
+    <a href="{{ url_for('skills') }}">Skills</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+</div>
+
+<div class="container">
+
+    <h1>My Projects</h1>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+        <h3>Personal CV Website</h3>
+        <p>This is a responsive CV website built using Flask and HTML/CSS.</p>
+        <p class="tech">Technologies: HTML, CSS, Python (Flask)</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+        <h3> Library Management System</h3>
+        <p>A system to manage library records like books and details.</p>
+        <p class="tech">Technologies: Python, MySQL ,Tkinter</p>
+        <a href="https://github.com/deepakdevran/Library-management-system" class="btn">View Project</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+        <h3>Data Analysis Project</h3>
+        <p>Analyzed movie dataset using Python libraries and visualized insights.</p>
+        <p class="tech">Technologies: Python,Numpy, Pandas, Matplotlib,Seaborn</p>
+        <a href="https://github.com/deepakdevran/Netflix-Movies-Data-clean-and-analysis" class="btn">View Project</a>
+    </div>
+
+</div>
+
+</body>
+</html>

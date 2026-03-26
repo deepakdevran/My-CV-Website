@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff9800;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+
+        .section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('qualification') }}">Qualification</a>
+    <a href="{{ url_for('skills') }}">Skills</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+</div>
+
+<div class="container">
+
+    <!-- ABOUT -->
+    <div class="section active">
+        <h1>DEEPAK SHARMA</h1>
+        <img src="{{ url_for('static', filename='profile.jpeg') }}" class="profile-pic">
+        <p>Email: deepakdevran@gmail.com</p>
+        <p>Phone: +91-80066770611</p>
+        <p>Welcome to my CV website!</p>
+    </div>
+
+</div>
+
+</body>
+</html>
