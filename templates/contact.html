@@ -11,6 +11,24 @@
             background: #f4f4f4;
             text-align: center;
         }
+         /* NAVBAR */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ff9800;
+        }
 
         .container {
             width: 60%;
@@ -45,6 +63,14 @@
     </style>
 </head>
 <body>
+
+<div class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('qualification') }}">Qualification</a>
+    <a href="{{ url_for('skills') }}">Skills</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+</div>
 
 <div class="container">
     <h1>Contact Me</h1>
